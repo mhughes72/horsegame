@@ -1,0 +1,59 @@
+.dealer {
+  // width: 80%;
+  // height: 100px;
+  // box-shadow: 0 2rem 4rem rgba($color-black, 0.8);
+  border-radius: 1rem;
+  // background: $palette-brown;
+  // margin-top: 1rem;
+  padding: 0px;
+  text-align: center;
+  @include clearfix;
+
+  &__deck {
+    width: 50%;
+    height: 100%;
+    // background: red;
+    float: left;
+    // display: inline-block;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    @include clearfix_horizontal;
+    &__side {
+      transition: all 0.3s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      backface-visibility: hidden;
+
+      &--front {
+        // background-color: $color-grey-light;
+      }
+      &--back {
+        // background-color: $color-tertiary-dark;
+        transform: rotateY(180deg);
+      }
+    }
+    &:hover &__side--front {
+      transform: rotateY(180deg);
+    }
+    &:hover &__side--back {
+      transform: rotateY(0);
+    }
+  }
+    &__card {
+      // margin-top: 1rem;
+
+      width: 50%;
+      // margin-left: 15%;
+      height: 100%;
+      // background: black;
+      // float: right;
+      display: inline-block;
+      &:focus {
+        background-color: $color-tertiary-dark;
+      }
+    }
+  }
+

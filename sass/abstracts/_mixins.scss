@@ -1,0 +1,22 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin clearfix_horizontal {
+  // border-top: 1px solid transparent;
+  // border-bottom: 1px solid transparent;
+  // padding-top: 1rem;
+  // padding-bottom: 1rem;
+  min-height: 1px;
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

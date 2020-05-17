@@ -1,0 +1,33 @@
+.track {
+  font-size: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  // background-color: rgba($casino-green, .8);
+  // border-color: $color-primary-light;
+  // box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+
+  @include clearfix;
+  @include clearfix_horizontal;
+  &__spades {
+    background-color: rgba($palette-yellow, .8);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    padding: 0 1rem 1rem 1rem;
+    // margin: 1rem 1rem 1rem 1rem;
+  }
+  &__hearts {
+    background-color: rgba($palette-brown, .8);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    padding: 0 1rem 1rem 1rem;
+  }
+  &__clubs {
+    background-color: rgba($palette-green, .8);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    padding: 0 1rem 1rem 1rem;
+  }
+  &__diamonds {
+    
+    background-color: rgba($palette-white, .8);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    padding: 0 1rem 1rem 1rem;
+  }
+}

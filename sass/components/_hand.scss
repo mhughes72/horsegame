@@ -1,0 +1,31 @@
+.hand {
+  
+  max-width: $grid-width;
+  margin: 0 auto;
+  background-color: $palette-white;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 4rem rgba($color-black, .8);
+
+  // &:not(:last-child) {
+  //   margin-bottom: $gutter-vertical;
+  // }
+
+  @include clearfix;
+
+  [class^="col-"] {
+    // background-color: orangered;
+    float: left;
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+  &__card {
+    // background-color: black;
+  }
+
+  &--0 {
+    font-stretch: 1rem;
+  }
+  @include clearfix;
+}

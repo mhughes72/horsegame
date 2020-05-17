@@ -1,0 +1,49 @@
+.players {
+    // box-shadow: 0 2rem 4rem rgba($color-black, .8);
+    // border-radius: 1rem;
+    // background: $palette-blue;
+    font-size: 1rem;
+    text-transform: uppercase;
+    
+    @include clearfix;
+    &__player {
+        background-color: $palette-green;
+        
+        box-shadow: 0 2rem 4rem rgba($color-black, .8);
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+        &__name {
+            color: $color-white;
+            font-size: 2rem;
+            margin-bottom: -1rem;
+        }
+        &__bank {
+            color: $color-black;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        &__suit {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        &__bet {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+    &__player--0 {
+        // background-color: $palette-white;
+    }
+    &__player--1 {
+        // background-color: $palette-white;
+    }
+    &__player--2 {
+        // background-color: $palette-white;
+    }
+    &__player--3 {
+        // background-color: $palette-white;
+    }
+}

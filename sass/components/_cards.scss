@@ -1,0 +1,20 @@
+.card {
+  
+  position: relative;
+  font-size: 1rem;
+
+  width: 65%;
+
+  border-radius: 2px;
+  &__deck,
+  &.ace__S,
+  &.ace__H,
+  &.ace__C,
+  &.ace__D {
+    // width: 100%;
+    background-color: green($color: #000000);
+  }
+
+}
+
+

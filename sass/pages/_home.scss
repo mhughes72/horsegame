@@ -1,0 +1,51 @@
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($palette-brown, 0.8),
+    rgba($palette-green, 0.8)
+  ),
+  url(../img/background02.jpg);
+  background-size: full;
+
+  transform: skewY(-7deg);
+  //SELECT ALL DIRECT CHILDREN
+  & > * {
+    transform: skewY(7deg);
+  }  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+
+}
+
+.control-bar {
+  @include clearfix;
+  // background-color: $palette-green;
+  // border-radius: 1rem;
+  // box-shadow: 0 2rem 4rem rgba($color-black, .8);
+
+
+}
+
+
+// .section-race-track {
+//     margin-top: -10rem;
+//     padding: 20rem 0;
+//     background-image: linear-gradient(
+//         to right bottom,
+//         rgba($color-primary-light, 0.8),
+//         rgba($color-primary-dark, 0.8)
+//       ),
+//       url(../img/horses01.jpg);
+//       background-size: full;
+
+//       transform: skewY(-7deg);
+//       //SELECT ALL DIRECT CHILDREN
+//       & > * {
+//         transform: skewY(7deg);
+//       }
+// }
+
+

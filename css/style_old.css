@@ -1,0 +1,119 @@
+.card {
+  /* padding: 10px; */
+  border: solid 1px #808080;
+  background-color: white;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 14pt;
+  text-align: center;
+  color: black;
+  margin: 3px;
+  height: 100px;
+  width: 65px;
+}
+
+.player {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 1px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.grid-container-top {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  background-color: #2196f3;
+  padding: 1px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 1px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex; /* or inline-flex */
+}
+
+/* 
+.outline {
+  width: 110px;
+  border: 0px solid black;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background: #fff;
+}
+
+.top {
+  text-align: left;
+}
+.bottom {
+  text-align: right;
+}
+
+.shadow {
+  box-shadow: 1px 1px 3px #000;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+}
+.rounded {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.deck {
+  width: 10%;
+  margin: 20px auto;
+  background: dodgerblue;
+  border: solid 10px black;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+.btn {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.card .value {
+  font-size: 15pt;
+  font-family: sans-serif;
+}
+
+.card .suit {
+  background-image: url("img/card.png");
+  height: 100px;
+  width: 90px;
+}
+
+.card .diamonds {
+  background-position-y: 100px;
+}
+
+.card .hearts {
+  background-position-x: 90px;
+}
+
+.card .clubs {
+  background-position-x: 90px;
+  background-position-y: 100px;
+} */
