@@ -8,6 +8,19 @@ import Player from './models/Player';
 import * as playerView from './views/playerViews';
 import { elements } from './views/base';
 import { abs } from 'mathjs'
+//Dynamic shit
+const pathToCats = require.context('../img', true);
+
+const cats = [
+	'2C.png',
+	'2D.png',
+	'2H.png',
+	'2S.png'
+];
+
+const getCats = () => cats.map(name => `<img src='${pathToCats(name, true)}' alt='${name}' />`);
+
+
 
 //Global state of the app
 const state = {}
@@ -122,6 +135,8 @@ const resetGame = () => {
     state.cards.calculateOdds();
     trackView.dealHand(state.cards.hand);
     trackView.displayOdds(state.cards.odds)
+    var a=elements.dealtCard.firstChild;
+    console.log('TYPE: ', a)
     elements.dealtCard.removeChild(elements.dealtCard.firstChild);
     trackView.setupAces();
 }

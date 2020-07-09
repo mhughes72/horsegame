@@ -16,6 +16,7 @@ export const dealHand = (hand) => {
 
 
 export const setupAces = () => {
+    console.log('STARTING UP')
     elements.aceTrack().forEach(e1 => {
         e1.forEach(e2 => {
             e2.innerHTML = '';

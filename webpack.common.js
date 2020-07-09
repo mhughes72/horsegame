@@ -1,6 +1,9 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-
 const path = require('path');
+
+// const pathToCats = require.context('../img', true);
+// var req = require.context("../img", false, /.*\.png$/);
+
 
 module.exports = {
 
